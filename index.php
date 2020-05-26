@@ -6,7 +6,7 @@
   <!--metateag  do projeto-->
   <meta name="viewport" content="width-device-width, initial-scale=1.0">
   <!--titulo-->
-  <title>Site do Grupo Sindicato do Samba</title>
+  <title>Sindicato do Samba</title>
     <!--font-->
    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 	<!--script instalacao jquery-->
