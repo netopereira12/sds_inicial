@@ -1,0 +1,521 @@
+/*  reseter */
+*	{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-decoration:none;
+	box-sizing:content-box;
+}
+
+body {
+	font:14px sans-serif;
+}	
+
+
+nav {
+	background:#000024;  /*  fundo menu*/
+
+}
+
+nav li {
+	font-weight:bold;
+	color:#FFFFFF;		/*  cor do link */
+}
+
+nav ul li {
+	display:inline;
+}
+
+nav ul li a {
+	color:#FFFFFF;		/*  cor do link */
+}
+
+p {
+	z-index:10000;
+	font-size:100px;
+	text-align:center;
+	position:absolute;
+	width:20%;
+	padding-top:100px;
+	color:white;
+	font-family:'lato';
+}
+
+/*  Smartphone*/
+@media only screen and ( min-width: 320px ) and ( max-width: 599px )  {	/*  configuração domenu para dispositivos mobile com tela de até 480 px */
+	nav {
+		height:25px;
+		padding-top:25px;
+	}
+
+	nav ul li {
+		width: 95%;
+		display: none;
+		position:relative;
+		float: left;
+		top: 27px;
+		height:20px;
+		padding-top:10px;
+		padding-left: 5%;
+		padding-bottom:5px;
+		border-bottom: 1px #FFF solid;
+		background-color:#279EC0;
+		cursor:pointer;
+
+	}
+
+	.botao-menu {
+		display: block;
+		position:absolute;
+		top:40px;
+		right:0px;
+		cursor:pointer;
+		padding-right:10%; 
+		text-align:right;
+	}
+
+	.botao-menu img 	{
+		width:60%;
+		height:60%;
+	}
+
+	.logo-menu {
+		position:absolute;
+		left:0;
+		top:0;
+		text-align:center;
+		padding-top:35px;
+	}
+
+	.logo-menu img 	{
+		max-width:100%;
+		margin-left: 30px;
+	}
+
+
+	.redes-sociais ul {
+		background-color:#279EC0;
+		height:30px;
+		border-bottom: 1px #FFF solid;
+		padding-right:3%; 
+	}
+
+	.redes-sociais ul li{
+		display:inline;
+		text-align:center;
+		margin-right: 1%;
+		position:relative;
+		top: 20%;
+		left: 10%;
+	}
+
+	.redes-sociais a{
+		font:11px sans-serif;
+		color:#FFFFFF;		/*  cor do link */
+		text-align:center;
+
+	}
+
+	/* Slide Smartphone  */
+	section#galeria {
+		width:100%;
+		height:201px;
+		background:#fff;
+		display:block;		
+		overflow:hidden;
+		box-shadow:#999 0 0 15px;
+		margin: 1px auto;
+	}
+
+	section#galeria section#buttons .prev {
+		display:inline;
+		position:absolute;
+		margin-top:70px;
+		z-index:600;
+		margin-left:20px;
+	}
+
+	section#galeria section#buttons .next {
+		display:inline;
+		position:absolute;
+		margin-top:70px;
+		z-index:600;
+		right:20px;
+		
+	}
+
+
+	section#galeria section#buttons a {
+		background:#FFF;
+		padding: 2px 2px;
+		width:25px;
+		height:25px;
+		display:inline-block;
+		text-align:center;
+		font:15pt arial, bold, sans-serif;
+		color:#000000;
+		opacity:0.8;
+		border-radius:50%;
+    	z-index: 9999;
+	}
+
+
+	section#galeria section#buttons a:hover {
+		background:#279EC0;
+		cursor:pointer;
+		color:#fff;
+
+	}
+
+	section#galeria ul {
+		list-style:none;
+		display:table;
+		position:relative;
+
+	}
+
+	section#galeria ul li {
+		width:100%;
+		height:201px;
+		position:relative;
+		display:inline-block;
+	}
+	
+	section#galeria ul li img {
+		width:100%;
+ 		height:auto;
+	}
+
+	section#galeria ul li span {
+		background:#333;
+		width:100%;
+		display:table;
+		opacity:0.7;
+		position:absolute;
+		bottom:0;
+		padding:10px;
+		font: 8pt arial, verdana, sans-serif;
+		color:#FFF;
+		text-align:center;
+	}
+
+
+
+
+}
+
+/*  Tablet */
+@media only screen and ( min-width: 600px ) and ( max-width: 989px ) {	/*  configuração domenu para dispositivos mobile com tela de até 480 px */
+	nav {
+		height:65px;
+
+	}
+
+	nav ul li {
+		width: 95%;
+		display: none;
+		position:relative;
+		float: left;
+		top: 67px;
+		height:20px;
+		padding-top:10px;
+		padding-left: 5%;
+		padding-bottom:5px;
+		border-bottom: 1px #FFF solid;
+		background-color:#279EC0;
+		cursor:pointer;
+	}
+
+	.botao-menu {
+		display: block;
+		position:absolute;
+		top:40px;
+		right:0px;
+		cursor:pointer;
+		padding-right:10%; 
+		text-align:right;
+	}
+
+	.botao-menu img 	{
+		width:100%;
+		height:100%;
+	}
+
+	.logo-menu {
+		position:absolute;
+		left:0;
+		top:0;
+		text-align:center;
+		padding-top:35px;
+	}
+
+	.logo-menu img 	{
+		max-width:100%;
+		margin-left: 30px;
+	}
+
+	.redes-sociais ul {
+		background-color:#279EC0;
+		height:30px;
+		border-bottom: 1px #FFF solid;
+	}
+
+	.redes-sociais ul li{
+		display:inline;
+		text-align:center;
+		margin-right: 2%;
+		position:relative;
+		top: 20%;
+		left: 20%;
+	}
+
+	.redes-sociais a{
+		font:14px sans-serif;
+		color:#FFFFFF;		/*  cor do link */
+		text-align:center;
+
+	}
+
+	/* Slide Tablet  */
+	section#galeria {
+		width:100%;
+		height:380px;
+		background:#fff;
+		display:block;		
+		overflow:hidden;
+		box-shadow:#999 0 0 15px;
+		margin: 1px auto;
+	}
+
+	section#galeria section#buttons .prev {
+		display:inline;
+		position:absolute;
+		margin-top:150px;
+		z-index:600;
+		margin-left:20px;
+	}
+
+	section#galeria section#buttons .next {
+		display:inline;
+		position:absolute;
+		margin-top:150px;
+		z-index:600;
+		right:20px;
+		
+	}
+
+
+	section#galeria section#buttons a {
+		background:#FFF;
+		padding: 4px 4px;
+		width:35px;
+		height:35px;
+		display:inline-block;
+		text-align:center;
+		font:21pt arial, bold, sans-serif;
+		color:#000000;
+		opacity:0.8;
+		border-radius:50%;
+    	z-index: 9999;
+	}
+
+
+	section#galeria section#buttons a:hover {
+		background:#279EC0;
+		cursor:pointer;
+		color:#fff;
+
+	}
+
+	section#galeria ul {
+		list-style:none;
+		display:table;
+		position:relative;
+
+	}
+
+	section#galeria ul li {
+		width:100%;
+		height:380px;
+		position:relative;
+		display:inline-block;
+	}
+	
+	section#galeria ul li img {
+		width:100%;
+ 		height:auto;
+	}
+
+	section#galeria ul li span {
+		background:#333;
+		width:100%;
+		display:table;
+		opacity:0.7;
+		position:absolute;
+		bottom:0;
+		padding:10px;
+		font: 12pt arial, verdana, sans-serif;
+		color:#FFF;
+		text-align:center;
+	}
+
+
+	
+}
+
+
+/*  Desktop */
+@media only screen and ( min-width: 990px ) {	/*  configuração domenu para dispositivos mobile com tela de até 480 px */
+	nav {
+		height:80px;
+		padding-right:2%;
+		border-bottom: 1px #FFF solid;
+
+	}
+
+	nav ul li {
+		display:inline;
+		text-align:center;
+		margin-right: 3%;
+		position:relative;
+		top: 30px;
+		left: 35%;
+		padding-top:5px;
+
+
+	}
+	
+	.botao-menu {
+		display:none;
+	}
+
+	.logo-menu {
+		position:absolute;
+		left:2%;
+		top:0%;
+		text-align:center;
+		padding-top:45px;
+	}
+
+	.logo-menu img 	{
+		max-width:90%;
+		margin-left:15%;
+		margin-right: 3%;
+		padding-left:4%;
+	}
+
+	
+	.redes-sociais ul {
+		background-color:#279EC0;
+		height:30px;
+		padding-left:2%;
+		border-bottom: 1px #FFF solid;
+	}
+
+	.redes-sociais ul li{
+		display:inline;
+		text-align:center;
+		margin-right: 10%;
+		position:relative;
+		top: 30%;
+		left: 20%;
+	}
+
+	.redes-sociais a{
+		font:14px sans-serif;
+		color:#FFFFFF;		/*  cor do link */
+		text-align:center;
+
+	}
+
+	/* Slide Desktop  */
+	section#galeria {
+		width:100%;
+		height:840px;
+		background:#fff;
+		display:block;		
+		overflow:hidden;
+		box-shadow:#999 0 0 15px;
+		margin: 1px auto;
+	}
+
+	section#galeria section#buttons .prev {
+		display:inline;
+		position:absolute;
+		margin-top:230px;
+		z-index:600;
+		margin-left:20px;
+	}
+
+	section#galeria section#buttons .next {
+		display:inline;
+		position:absolute;
+		margin-top:230px;
+		z-index:600;
+		right:20px;
+		
+	}
+
+
+	section#galeria section#buttons a {
+		background:#FFF;
+		padding: 5px 5px;
+		width:40px;
+		height:40px;
+		display:inline-block;
+		text-align:center;
+		font:25pt arial, bold, sans-serif;
+		color:#000000;
+		opacity:0.8;
+		border-radius:50%;
+    	z-index: 9999;
+	}
+
+
+	section#galeria section#buttons a:hover {
+		background:#279EC0;
+		cursor:pointer;
+		color:#fff;
+
+	}
+
+	section#galeria ul {
+		list-style:none;
+		display:table;
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+
+	section#galeria ul li {
+		width:100%;
+		height:540px;
+		position:relative;
+		display:inline-block;
+	}
+	
+	section#galeria ul li img {
+		width:100%;
+ 		height:auto;
+	}
+
+	section#galeria ul li span {
+		background:#333;
+		width:100%;
+		display:table;
+		opacity:0.7;
+		position:absolute;
+		bottom:0;
+		padding:10px;
+		font: 12pt arial, verdana, sans-serif;
+		color:#FFF;
+		text-align:center;
+	}
+
+}
+
+
+
+
+
+
